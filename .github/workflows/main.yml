@@ -32,7 +32,9 @@ jobs:
       - name: 'printing after action'
         run: ls -a 
 
-    
+      - name: "Login to Docker Hub"
+        run: docker login --username ${{ secrets.USERNAME }} --password ${{ secrets.PASSWORD }}
+
           
      
           
