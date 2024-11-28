@@ -3,10 +3,10 @@ name: CI Workflow
 on:
   push:
     branches:
-      - master   # Update this to 'main' if that's your default branch
+      - master   
   pull_request:
     branches:
-      - master   # Update this to 'main' if that's your default branch
+      - master   
 
 jobs:
   build:
@@ -21,3 +21,6 @@ jobs:
 
       - name: 'Age'
         run: echo 18
+
+      - name: 'PRINT FOLDER EXISTS'
+        run: ls
