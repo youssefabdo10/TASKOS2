@@ -24,3 +24,10 @@ jobs:
 
       - name: 'PRINT FOLDER EXISTS'
         run: ls
+
+      - name: Checkout repository
+        uses: actions/checkout@v3  
+         
+
+      - name: 'printing after action'
+        run: ls -a
