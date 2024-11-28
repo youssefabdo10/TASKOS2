@@ -30,19 +30,10 @@ jobs:
          
 
       - name: 'printing after action'
-        run: ls -a
-
-        
+        run: ls -a 
 
         - name: "Login to Docker Hub"
-        run:  docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_TOKEN }}
-
-
-      - name: "Build image"
-        run:  docker build -t ${{ secrets.DOCKER_USERNAME }}/youssef_abdelnabe_said .
-
-
-      - name: "Push to Docker Hub"
-        run:  docker push ${{ secrets.DOCKER_USERNAME }}/youssef_abdelnabe_said
-
-
+        run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_TOKEN }}
+          
+     
+          
