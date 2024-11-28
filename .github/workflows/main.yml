@@ -9,10 +9,10 @@ on:
       runs-on: ubuntu-latest
   
       steps:
-        - name: "testing 1"
+        - name: 'testing 1'
           run: pwd
   
-        - name: "name"
+        - name: 'name'
           run: echo youssef
             
   
