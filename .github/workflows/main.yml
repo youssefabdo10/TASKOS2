@@ -1,18 +1,23 @@
-on:
-    push:
-      branches:
-        - master
+name: CI Workflow
 
-  
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-  
-      steps:
-        - name: 'testing 1'
-          run: pwd
-  
-        - name: 'name'
-          run: echo youssef
-            
-  
+on:
+  push:
+    branches:
+      - master   # Update this to 'main' if that's your default branch
+  pull_request:
+    branches:
+      - master   # Update this to 'main' if that's your default branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 'Testing 1'
+        run: pwd
+
+      - name: 'Name'
+        run: echo youssef
+
+      - name: 'Age'
+        run: echo 18
